@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 1em;
+    text-align: center;
+}
+
+nav button {
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+button[type="submit"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 8px); /* Adjusted width to account for padding and border */
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 1em;
+}

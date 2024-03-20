@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <main>
+        <button id="btnAdd">Add Student</button>
+
+        <form id="addStudentForm" class="hidden">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" required><br>
+            <label for="studentEmail">Email:</label>
+            <input type="text" id="studentEmail" required><br>
+            <label for="studentAge">Age:</label>
+            <input type="number" id="studentBirthDate" required><br>
+            <label for="studentHometown">Hometown:</label>
+            <input type="text" id="studentHometown" required><br>
+            <label for="studentGrade">GPA:</label>
+            <input type="number" id="studentGrade" min="0" max="10" step="0.01" required><br>
+            <button type="button" id="btnSubmitStudent">Submit</button>
+        </form>
+        
+        <form id="editStudentForm" class="hidden">
+            <label for="editStudentID">ID:</label>
+            <input type="text" id="editStudentID" required><br>
+            <label for="editStudentName">Name:</label>
+            <input type="text" id="editStudentName" required><br>
+            <label for="editStudentEmail">Email:</label>
+            <input type="text" id="editStudentEmail" required><br>
+            <label for="editStudentAge">Age:</label>
+            <input type="number" id="editStudentAge" required><br>
+            <label for="editStudentHometown">Hometown:</label>
+            <input type="text" id="editStudentHometown" required><br>
+            <label for="editStudentGrade">GPA:</label>
+            <input type="number" id="editStudentGrade" min="0" max="10" step="0.01" required><br>
+            <button type="button" id="btnSubmitEdit">Submit</button>
+        </form>
+
+        <form id="deleteStudentForm" class="hidden">
+            <label for="deleteStudentID">ID:</label>
+            <input type="text" id="deleteStudentID" required><br>
+            <button type="button" id="btnSubmitDelete">Submit</button>
+        </form>
+
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Hometown</th>
+                    <th>GPA</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </main>
+
+    <script src="student_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
